@@ -1,0 +1,23 @@
+import { axiosInstance } from "../../axios";
+import { useMutation, useQueryClient } from "@tanstack/react-query";
+
+export function LogoutButton() {
+  const { mutateAsync: logoutAsync } = useMutation({
+    mutationFn: () => {
+      return axiosInstance.post("auth/logout").then((resp) => resp.data);
+    },
+  });
+
+  const queryClient = useQueryClient();
+
+  return (
+    <input
+      type="button"
+      value="Kilépés"
+      onClick={async () => {
+        await logoutAsync();
+        queryClient.invalidateQueries();
+      }}
+    />
+  );
+}

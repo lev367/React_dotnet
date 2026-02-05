@@ -1,0 +1,66 @@
+####################################
+# .NET / Visual Studio
+####################################
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider / VS Code
+.idea/
+.vscode/
+
+####################################
+# ASP.NET Core
+####################################
+appsettings.Development.json
+appsettings.Local.json
+secrets.json
+
+####################################
+# Node / React
+####################################
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+dist/
+build/
+out/
+
+####################################
+# React tooling
+####################################
+.cache/
+.vite/
+.eslintcache
+
+####################################
+# Environment variables
+####################################
+.env
+.env.local
+.env.*.local
+
+####################################
+# OS junk
+####################################
+.DS_Store
+Thumbs.db
+
+####################################
+# Test results
+####################################
+TestResults/
+coverage/
+
+####################################
+# Publish output
+####################################
+publish/
+ 

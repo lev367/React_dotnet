@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="react_dotnet.client/react_dotnet.client.esproj">
+    <Build />
+    <Deploy />
+  </Project>
+  <Project Path="React_dotnet.database/React_dotnet.database.csproj" Id="745a5d2d-a05a-49d2-930b-fa6d5ab4ecd1" />
+  <Project Path="React_dotnet.Server/React_dotnet.Server.csproj" />
+</Solution>
